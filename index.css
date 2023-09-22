@@ -1,0 +1,88 @@
+.hs-store-navbar-top {
+    background-color: var(--hs-bl-001) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    height: 50px !important;
+    padding: 10px !important;
+    z-index: 100 !important;
+}
+
+.hs-store-navbar-left {
+    background-color: var(--hs-bl-001) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    position: fixed !important;
+    top: 70px !important;
+    left: 10px !important;
+    bottom: 70px !important;
+    width: var(--hs-store-navbar-left-width) !important;
+    overflow-y: auto !important;
+    z-index: 50 !important;
+}
+.hs-store-navbar-left:hover {
+    width: 200px !important;
+}
+.hs-store-navbar-left:hover .hs-store-navbar-left-show {
+    display: inline !important;
+}
+
+.hs-store-navbar-bottom {
+    background-color: var(--hs-bl-001) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    position: fixed !important;
+    left: 10px !important;
+    right: 10px !important;
+    bottom: 10px !important;
+    height: 50px !important;
+    z-index: 100 !important;
+}
+
+.hs-store-content {
+    background-color: var(--hs-bl-001) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+    backdrop-filter: blur(3px) !important;
+    position: absolute !important;
+    top: 70px !important;
+    left: calc(20px + var(--hs-store-navbar-left-width)) !important;
+    right: 10px !important;
+    bottom: 70px !important;
+    z-index: 1 !important;
+}
+
+.hs-store-search {
+    height: 30px !important;
+    border: 1px solid var(--hs-tx-001) !important;
+    border-radius: 15px !important;
+    padding: 10px !important;
+}
+
+.hs-store-navbar-left-show {
+    display: var(--hs-store-navbar-left-show) !important;
+}
+
+#hs-store-titel {
+    height: 40px !important;
+    margin: 5px !important;
+    border-radius: 10px !important;
+    background-color: var(--hs-bl-001) !important;
+}
+
+/* Seitenbreite größer als 1001px */
+@media (min-width: 1001px) {
+    :root {
+        --hs-store-navbar-left-width: 200px !important;
+    }
+}
+
+/* Seitenbreite kleiner als 1000px */
+@media (max-width: 1000px) {
+    :root {
+        --hs-store-navbar-left-width: 50px !important;
+        --hs-store-navbar-left-show: none !important;
+    }
+}
