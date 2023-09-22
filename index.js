@@ -1,24 +1,24 @@
 function hschangeContent(hscontentId) {
-    var hscontent = document.getElementById('hs-store-content');
+    var hscontent = document.getElementById('hs-wiki-content');
     var hsnewContent = document.getElementById(hscontentId).innerHTML;
     hscontent.innerHTML = hsnewContent;
 }
 
-document.getElementById("hs-store-search-input").addEventListener("keyup", function(event) {
+document.getElementById("hs-wiki-search-input").addEventListener("keyup", function(event) {
     if (event.keyCode === 13) { // Überprüfen, ob die Eingabetaste gedrückt wurde
       event.preventDefault(); // Verhindern, dass das Formular gesendet wird
-      hsstoresearchcontent(); // Funktion zum Durchführen der Suche aufrufen
+      hswikisearchcontent(); // Funktion zum Durchführen der Suche aufrufen
     }
 });
 
-function hsstoresearchcontent() {
-    var hscontent = document.getElementById('hs-store-content');
-    var hsstoresearchcontentb = document.getElementById('hs-store-search-content-b').innerHTML;
-    hscontent.innerHTML = hsstoresearchcontentb;
+function hswikisearchcontent() {
+    var hscontent = document.getElementById('hs-wiki-content');
+    var hswikisearchcontentb = document.getElementById('hs-wiki-search-content-b').innerHTML;
+    hscontent.innerHTML = hswikisearchcontentb;
 
-    var input = document.getElementById('hs-store-search-input');
+    var input = document.getElementById('hs-wiki-search-input');
     var filter = input.value.toUpperCase();
-    var ul = document.getElementById('hs-store-search-ul');
+    var ul = document.getElementById('hs-wiki-search-ul');
     var li = ul.getElementsByTagName('li');
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];

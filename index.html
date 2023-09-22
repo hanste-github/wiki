@@ -14,7 +14,7 @@
     <link href="/css/index.css" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/wiki/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="/icons/font/bootstrap-icons.css" rel="stylesheet">
     
   </head>
   <body>
@@ -45,88 +45,82 @@
       </div>
     </div>
 
-    <div class="hs-store-navbar-top rounded navbar-expand">
-        <div class="container-fluid">
-            <div class="d-flex">
-                <div class="me-4">
-                    <a href="/store/index.html">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="var(--hs-tx-001)" stroke="none">
-                                <path d="M1556 4989 c-274 -29 -552 -129 -782 -282 -375 -249 -636 -634 -734 -1083 -36 -169 -42 -337 -38 -1229 4 -768 6 -859 22 -945 64 -334 202 -626 409 -861 296 -336 707 -542 1157 -579 153 -13 1673 -13 1820 0 380 33 717 175 998 420 295 258 490 608 568 1020 16 86 18 178 22 955 4 900 -1 1048 -39 1220 -163 749 -777 1294 -1539 1364 -137 13 -1744 13 -1864 0z m285 -528 c47 -47 42 51 43 -866 l1 -690 615 0 615 0 -4 541 c-2 297 0 639 4 759 l7 220 38 37 38 38 319 0 c309 0 321 -1 347 -21 53 -41 51 -12 56 -819 l5 -755 198 -3 197 -2 40 -40 40 -40 0 -318 0 -319 -34 -39 -34 -39 -203 -5 -204 -5 -5 -755 c-5 -807 -3 -778 -56 -819 -26 -20 -38 -21 -347 -21 l-319 0 -38 38 -38 37 -7 210 c-4 116 -5 454 -2 751 4 391 2 545 -6 553 -8 8 -183 11 -608 11 -516 0 -598 -2 -609 -15 -9 -11 -11 -105 -7 -412 3 -219 3 -555 0 -748 l-6 -350 -37 -37 -38 -38 -313 0 c-338 0 -344 1 -383 53 -21 28 -21 36 -26 785 l-5 757 -198 3 -197 2 -40 40 -40 40 0 313 c0 426 -13 407 290 407 l190 0 0 750 c0 829 -3 790 63 830 30 19 52 20 346 20 l313 0 39 -39z"/>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="w-100">
-                    <input type="text" id="hs-store-search-input" class="hs-store-search blur1 w-100" placeholder="Suche...">
-                </div>
-                <div class="ms-3">
-                    <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="height: 30px;width: 30px;">
-                        <i class="bi bi-gear"></i>
-                    </button>
-                </div>
+    <div class="hs-wiki-navbar-top rounded navbar-expand">
+        <div class="d-flex">
+            <div class="me-4">
+                <a href="/index.html">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.000000 500.000000" preserveAspectRatio="xMidYMid meet" width="35px" height="35px">
+                        <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="var(--hs-tx-001)" stroke="none">
+                            <path d="M1556 4989 c-274 -29 -552 -129 -782 -282 -375 -249 -636 -634 -734 -1083 -36 -169 -42 -337 -38 -1229 4 -768 6 -859 22 -945 64 -334 202 -626 409 -861 296 -336 707 -542 1157 -579 153 -13 1673 -13 1820 0 380 33 717 175 998 420 295 258 490 608 568 1020 16 86 18 178 22 955 4 900 -1 1048 -39 1220 -163 749 -777 1294 -1539 1364 -137 13 -1744 13 -1864 0z m285 -528 c47 -47 42 51 43 -866 l1 -690 615 0 615 0 -4 541 c-2 297 0 639 4 759 l7 220 38 37 38 38 319 0 c309 0 321 -1 347 -21 53 -41 51 -12 56 -819 l5 -755 198 -3 197 -2 40 -40 40 -40 0 -318 0 -319 -34 -39 -34 -39 -203 -5 -204 -5 -5 -755 c-5 -807 -3 -778 -56 -819 -26 -20 -38 -21 -347 -21 l-319 0 -38 38 -38 37 -7 210 c-4 116 -5 454 -2 751 4 391 2 545 -6 553 -8 8 -183 11 -608 11 -516 0 -598 -2 -609 -15 -9 -11 -11 -105 -7 -412 3 -219 3 -555 0 -748 l-6 -350 -37 -37 -38 -38 -313 0 c-338 0 -344 1 -383 53 -21 28 -21 36 -26 785 l-5 757 -198 3 -197 2 -40 40 -40 40 0 313 c0 426 -13 407 290 407 l190 0 0 750 c0 829 -3 790 63 830 30 19 52 20 346 20 l313 0 39 -39z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="w-100">
+                <input type="text" id="hs-wiki-search-input" class="hs-wiki-search blur1 w-100" placeholder="Suche...">
+            </div>
+            <div class="ms-3">
+                <button class="hs-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="height: 35px;width: 35px;">
+                    <i class="bi bi-gear"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <div class="hs-store-navbar-left rounded">
+    <div class="hs-wiki-navbar-left rounded">
         <ul class="nav flex-column mb-auto">
             <li>
                 <a href="#" onclick="hschangeContent('hscontent1')" class="nav-link" aria-current="page">
-                    <i class="bi bi-1-circle me-2"></i><div class="hs-store-navbar-left-show">1</div>
+                    <i class="bi bi-1-circle me-2"></i><div class="hs-wiki-navbar-left-show">1</div>
                 </a>
                 <div class="ms-1">
                     <a href="#" onclick="hschangeContent('hscontent2')" class="nav-link" aria-current="page">
-                        <i class="bi bi-2-circle me-2"></i><div class="hs-store-navbar-left-show">2</div>
+                        <i class="bi bi-2-circle me-2"></i><div class="hs-wiki-navbar-left-show">2</div>
                     </a>
                     <a href="#" onclick="hschangeContent('hscontent3')" class="nav-link" aria-current="page">
-                        <i class="bi bi-3-circle me-2"></i><div class="hs-store-navbar-left-show">3</div>
+                        <i class="bi bi-3-circle me-2"></i><div class="hs-wiki-navbar-left-show">3</div>
                     </a>
                     <a href="#" onclick="hschangeContent('hscontent4')" class="nav-link" aria-current="page">
-                        <i class="bi bi-4-circle me-2"></i><div class="hs-store-navbar-left-show">4</div>
+                        <i class="bi bi-4-circle me-2"></i><div class="hs-wiki-navbar-left-show">4</div>
                     </a>
                     <a href="#" onclick="hschangeContent('hscontent5')" class="nav-link" aria-current="page">
-                        <i class="bi bi-5-circle me-2"></i><div class="hs-store-navbar-left-show">5</div>
+                        <i class="bi bi-5-circle me-2"></i><div class="hs-wiki-navbar-left-show">5</div>
                     </a>
                 </div>
             </li>
             <hr>
             <li>
                 <a href="#" onclick="hschangeContent('hscontent6')" class="nav-link" aria-current="page">
-                    <i class="bi bi-6-circle me-2"></i><div class="hs-store-navbar-left-show">6</div>
+                    <i class="bi bi-6-circle me-2"></i><div class="hs-wiki-navbar-left-show">6</div>
                 </a>
                 <div class="ms-1">
                     <a href="#" onclick="hschangeContent('hscontent7')" class="nav-link" aria-current="page">
-                        <i class="bi bi-7-circle me-2"></i><div class="hs-store-navbar-left-show">7</div>
+                        <i class="bi bi-7-circle me-2"></i><div class="hs-wiki-navbar-left-show">7</div>
                     </a>
                     <a href="#" onclick="hschangeContent('hscontent8')" class="nav-link" aria-current="page">
-                        <i class="bi bi-8-circle me-2"></i><div class="hs-store-navbar-left-show">8</div>
+                        <i class="bi bi-8-circle me-2"></i><div class="hs-wiki-navbar-left-show">8</div>
                     </a>
                     <a href="#" onclick="hschangeContent('hscontent9')" class="nav-link" aria-current="page">
-                        <i class="bi bi-9-circle me-2"></i><div class="hs-store-navbar-left-show">9</div>
+                        <i class="bi bi-9-circle me-2"></i><div class="hs-wiki-navbar-left-show">9</div>
                     </a>
                 </div>
             </li>
         </ul>
     </div>
 
-    <div class="hs-store-navbar-bottom rounded justify-content-center d-flex">
-        <div id="hs-store-titel" class="w-100"></div>
+    <div class="hs-wiki-navbar-bottom rounded justify-content-center d-flex">
+        <div id="hs-wiki-titel" class="w-100"></div>
         <button class="hs-btn" style="height: 50px !important; width: 50px !important;">
             <i class="bi bi-download"></i>
         </button>
     </div>
 
     <!-- Content -->
-    <div class="hs-store-content rounded p-2">
-        <div id="hs-store-content">
-            <a href="/store/index.html" class="btn hs-btn">
-                <h4>HanSte Store</h4>
+    <div class="hs-wiki-content rounded p-2">
+        <div id="hs-wiki-content">
+            <a href="/wiki/index.html" class="btn hs-btn">
+                <h4>HanSte wiki</h4>
             </a>
-            <div class="mt-1">
-                Senden sie mir Apps (und die dazugehörigen Informationen) zu, die ich auf dieser Seite hochladen soll.
-            </div>
-            <a href="mailto:stecherthananja@outlook.de" class="btn btn-primary mt-3">Apps per Mail senden</a>
         </div>
         
         <div id="hscontent1" class="hsontent" style="display: none;">
@@ -157,8 +151,8 @@
             <h3>9</h3>
         </div>
 
-        <div id="hs-store-search-content-b" style="display: none;">
-            <ul id="hs-store-search-ul" class="nav flex-column">
+        <div id="hs-wiki-search-content-b" style="display: none;">
+            <ul id="hs-wiki-search-ul" class="nav flex-column">
                 <li>
                     <a class="nav-link">ABC1</a>
                 </li>
@@ -205,39 +199,12 @@
             </div>
         </div>
     </div>
-  
-    <!-- Search -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-fullscreen-lg-down modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content blur1">
-                <div class="modal-header">
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ...">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body hs-bg-trans">
-                    <ul id="myUL" class="nav flex-column">
-                        <li>
-                            <a class="nav-link" href="/tutorials/index.html">Tutorials
-                                <p class="m-1">#tutorials</p>
-                            </a>
-                        </li>
-                        <li><a class="nav-link" href="/store/index.html">Store</a></li>
-                        <li><a class="nav-link" href="/os/index.html">OS</a></li>
-                        <li><a class="nav-link" href="/media/index.html">Media</a></li>
-                        <li><a class="nav-link" href="/video/index.html">Video</a></li>
-                        <li><a class="nav-link" href="/shop/index.html">Shop</a></li>
-                    </ul> 
-                </div>
-            </div>
-        </div>
-    </div>
     
     <!-- Javascript -->
     <script src="/wiki/index.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/color-modes.js"></script>
     <script src="/js/bootstrap.bundle.js"></script>
-    <script src="/js/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
   </body>
 </html>
