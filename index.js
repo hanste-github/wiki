@@ -1,9 +1,3 @@
-function hschangeContent(hscontentId) {
-    var hscontent = document.getElementById('hs-wiki-content');
-    var hsnewContent = document.getElementById(hscontentId).innerHTML;
-    hscontent.innerHTML = hsnewContent;
-};
-
 document.getElementById("hs-wiki-search-input").addEventListener("keyup", function(event) {
     if (event.keyCode === 13) { // Überprüfen, ob die Eingabetaste gedrückt wurde
       event.preventDefault(); // Verhindern, dass das Formular gesendet wird
