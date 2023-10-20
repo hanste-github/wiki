@@ -13,6 +13,7 @@
 }
 
 .hs-wiki-navbar-left {
+    border-radius: var(--hs-rounded-size) !important;
     background-color: var(--hs-bl-001) !important;
     -webkit-backdrop-filter: blur(20px) !important;
     backdrop-filter: blur(20px) !important;
@@ -20,7 +21,7 @@
     top: calc(45px + (var(--hs-margin-size) * 2)) !important;
     left: var(--hs-margin-size) !important;
     bottom: calc(50px + (var(--hs-margin-size) * 2)) !important;
-    width: var(--hs-media-navbar-left-width) !important;
+    width: var(--hs-wiki-navbar-left-width) !important;
     overflow-y: auto !important;
     z-index: 50 !important;
 }
@@ -45,15 +46,15 @@
 }
 
 .hs-wiki-content {
-    left: calc(20px + var(--hs-media-navbar-left-width)) !important;
+    left: calc(20px + var(--hs-wiki-navbar-left-width)) !important;
     border-radius: var(--hs-rounded-size) !important;
     background-color: var(--hs-bl-002) !important;
     -webkit-backdrop-filter: blur(3px) !important;
     backdrop-filter: blur(10px) !important;
-    margin: calc(45px + (var(--hs-margin-size) * 2)) calc(var(--hs-media-navbar-left-width) + (var(--hs-margin-size) * 3)) calc(50px + (var(--hs-margin-size) * 2)) var(--hs-margin-size) !important;
+    margin: calc(45px + (var(--hs-margin-size) * 2)) var(--hs-margin-size) calc(50px + (var(--hs-margin-size) * 2)) calc(var(--hs-wiki-navbar-left-width) + (var(--hs-margin-size) * 2)) !important;
     z-index: 1 !important;
     overflow-y: auto !important;
-    min-height: calc(100vh - 95px - (var(--hs-margin-size) * 6)) !important;
+    min-height: calc(100vh - 95px - (var(--hs-margin-size) * 4)) !important;
 }
 
 .hs-wiki-search {
